@@ -121,8 +121,7 @@ SELECT
     gender,
     COUNT(*) as total_trans
 FROM retail_sales
-GROUP 
-    BY 
+GROUP BY 
     category,
     gender
 ORDER BY 1
@@ -130,7 +129,7 @@ ORDER BY 1
 
 7. **Write a SQL query to calculate the average sale for each month. Find out best selling month in each year**:
 ```sql
-SELECT 
+SELECT
        year,
        month,
     avg_sale
@@ -162,7 +161,7 @@ LIMIT 5
 ```sql
 SELECT 
     category,    
-    COUNT(DISTINCT customer_id) as cnt_unique_cs
+    COUNT(DISTINCT customer_id) as count_unique_customer
 FROM retail_sales
 GROUP BY category
 ```
@@ -184,25 +183,25 @@ SELECT
     shift,
     COUNT(transaction_id) as total_orders    
 FROM hourly_sale
-GROUP BY shift
+GROUP BY shift;
 ```
 
 ## Findings
 
-- **Customer Demographics**: The dataset includes customers from various age groups, with sales distributed across different categories such as Clothing and Beauty.
-- **High-Value Transactions**: Several transactions had a total sale amount greater than 1000, indicating premium purchases.
-- **Sales Trends**: Monthly analysis shows variations in sales, helping identify peak seasons.
-- **Customer Insights**: The analysis identifies the top-spending customers and the most popular product categories.
-
+-**Customer Demographics**: The dataset represents customers across multiple age groups, with purchases spread across categories like Clothing and Beauty.
+-***High-Value Transactions**: A number of transactions recorded total sales above 1000, reflecting high-value purchases.
+-**Sales Trends**: Monthly analysis highlights fluctuations in sales, indicating seasonal patterns and peak periods.
+-**Customer Insights**: The analysis reveals top customers by spending and identifies the most popular product categories.
+  
 ## Reports
 
-- **Sales Summary**: A detailed report summarizing total sales, customer demographics, and category performance.
-- **Trend Analysis**: Insights into sales trends across different months and shifts.
-- **Customer Insights**: Reports on top customers and unique customer counts per category.
-
+- **Sales Summary**: A comprehensive overview of total sales, customer demographics, and category-wise performance.
+-**Trend Analysis**: Insights into sales patterns across different months and time periods.
+-**Customer Insights**: Analysis of top customers and the number of unique customers in each category.
+  
 ## Conclusion
 
-This project serves as a comprehensive introduction to SQL for data analysts, covering database setup, data cleaning, exploratory data analysis, and business-driven SQL queries. The findings from this project can help drive business decisions by understanding sales patterns, customer behavior, and product performance.
+This project provides a structured introduction to SQL for data analysis, including database creation, data cleaning, exploratory analysis, and business-oriented queries. The insights derived from this work can support decision making by revealing sales trends, customer behavior, and product performance patterns.
 
 ## How to Use
 
@@ -211,7 +210,8 @@ This project serves as a comprehensive introduction to SQL for data analysts, co
 3. Run Queries: Use `analysis_queries.sql` to perform data analysis.  
 4. Explore Further: Modify the queries to explore insights and answer additional business questions.
 ## Author - Amruta Ubhale 
+##  LinkedIn ID - www.linkedin.com/in/amrutau
 
-This project is part of my portfolio, showcasing the SQL skills essential for data analyst roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
+This project is included in my portfolio to demonstrate SQL skills relevant to data analyst roles. For any questions or feedback, please feel free to reach out.
 
 Thank you for visiting this project. Your feedback is appreciated.
