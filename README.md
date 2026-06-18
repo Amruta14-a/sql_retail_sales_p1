@@ -4,16 +4,19 @@
 
 **Project Title**: Retail Sales Analysis  
 **Level**: Beginner  
-**Database**: `sql_project_p1`
+**Database**: `sql_project_p1`  
+**Tool Used**: PostgreSQL (pgAdmin)  
+**Language**: SQL  
+**Domain**: Sales Analysis  
 
 This project is designed to demonstrate SQL skills and techniques typically used by data analysts to explore, clean, and analyze retail sales data. The project involves setting up a retail sales database, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries. This project is ideal for those who are starting their journey in data analysis and want to build a solid foundation in SQL.
 
 ## Objectives
 
-1. **Set up a retail sales database**: Create and populate a retail sales database with the provided sales data.
-2. **Data cleaning**: Identified missing values, updated them where appropriate, and removed records with critical missing data.
-3. **Exploratory Data Analysis (EDA)**: Perform basic exploratory data analysis to understand the dataset.
-4. **Business Analysis**: Use SQL to answer specific business questions and derive insights from the sales data.
+1. **Database Setup**: Created and populated a retail sales database using the provided dataset.
+2. **Data Cleaning**: Identified missing values, updated them where appropriate, and removed records with critical missing data.
+3. **Exploratory Data Analysis (EDA)**: Conducted basic exploratory analysis to understand data patterns and structure.
+4. **Business Analysis**: Applied SQL queries to address business questions and extract meaningful insights from sales data.
 
 ## Project Structure
 
@@ -43,9 +46,9 @@ CREATE TABLE retail_sales
 
 ### 2. Data Exploration & Cleaning
 
-- **Record Count**: Determine the total number of records in the dataset.
-- **Customer Count**: Find out how many unique customers are in the dataset.
-- **Category Count**: Identify all unique product categories in the dataset.
+- **Total Records**: Calculate the total number of entries in the dataset.
+- **Unique Customers**: Identify the number of distinct customers present in the dataset.
+- **Product Categories**: List all unique product categories available in the dataset.
 - **Null Value Check**: Identified missing values, updated them where appropriate, and removed records with critical missing data.
 
 ```sql
